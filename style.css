@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 00px;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+  background: #ffffff00;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(110, 105, 105); 
+  border-radius: 10px;
+}
+
+.logo {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 33%;
+  border: 3px solid #ffffff;
+  border-radius: 50px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+.nav-list {
+  width: 70%;
+  background-color: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-list li {
+  list-style: none;
+  padding: 26px;
+}
+
+.nav-list li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: 0.3s;
+}
+
+.nav-list li a:hover {
+  color: #dadada;
+  transition: 0.3s;
+  font-size: 15.5px;
+}
+
+.rightNav {
+  background-color: none;
+  width: 30%;
+  text-align: right;
+  padding: 0 23px;
+}
+
+#search {
+  padding: 5px;
+  font-size: 17px;
+  border: none;
+  border-radius: 25px;
+}
+
+.background {
+  background: rgba(0, 0, 0, 0.7) url(bg.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+}
+
+.box-main {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  color: #ffffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 50%;
+  margin: auto;
+  height: 80%;
+}
+
+.firstSection {
+  height: 100vh;
+}
+
+.firsthalf {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.secondhalf {
+  width: 30%;
+}
+
+.secondhalf img {
+  width: 100%;
+  padding: none;
+  border: none;
+  border-radius: 200px;
+  display: inline-block;
+  margin: auto;
+  size: 0.1vh;
+}
+
+.text-big {
+  font-size: 29px;
+  margin-top: 2px;
+}
+
+.text-small {
+  font-size: 15px;
+  margin-top: 4px;
+}
+
+.btn {
+  padding: 8px 17px;
+  margin: 13px 3px;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  font-size: 12px;
+  background: none;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 1s;
+}
+/*BTN HOVER EFFECT*/
+.btn:hover {
+  padding: 8px 17px;
+  margin: 13px 3px;
+  border: 1px solid #ffffff;
+  color: #000000;
+  background: #dadada;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/*BTN HOVER EFFECT ENDED*/
+
+.btn-sm {
+  padding: 6px 15px;
+  margin: auto;
+  vertical-align: middle;
+  border-radius: 6px;
+  border: none;
+}
+
+/*BUTTON-SM HOVER EFFECT
+.btn-sm :hover
+{
+    color: #829CD0;
+    background-color: rgb(255, 255, 255);
+    padding: 1px 5px;
+    margin: auto;
+    vertical-align: middle;
+    border-radius: 50px;
+}
+BUTTON-SM HOVER EFFECT ENDED*/
+
+.section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.section-left {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+  flex-direction: row-reverse;
+}
+
+.paras {
+  padding: 0 65px;
+}
+
+.sectionsubTag {
+  /* letter-spacing: 2px; */
+  margin-top: 20px;
+  font-family: sans-serif;
+  line-height: 26px;
+  text-align: justify;
+  color: #000000;
+}
+
+.thumbnail img {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #181717;
+  border-radius: 16px;
+  margin-top: 9px;
+  transition: 0.3s;
+}
+
+.thumbnail img:hover {
+  width: 180px;
+  height: 180px;
+  border: 2px solid #ffffff57;
+  border-radius: 16px;
+  margin-top: 9px;
+  cursor: pointer;
+}
+
+.contact {
+  background-color: #d6d6d6;
+  height: 90vh;
+  margin-top: 35px;
+}
+
+.text-center {
+  text-align: center;
+  padding-top: 20px;
+  font-family: "Ubuntu", sans-serif;
+  background-blend-mode: darken;
+}
+
+.form {
+  max-width: 45%;
+  margin: 25px auto;
+}
+.form-input {
+  margin: 7px 0;
+  padding: 5px 3px;
+  width: 100%;
+  font-size: 14px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 6px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.submit{
+  background-color: #fff;
+  border: 1px solid black;
+  color: #000000;
+  padding: 5px 8px;
+  transition: 0.5s;
+}
+
+.submit:hover{
+  background-color: transparent;
+  border: 1px solid black;
+  color: #000000;
+  padding: 5px 8px;
+}
+
+/*Footer of website*/
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: auto;
+  background-color: #2d2e33;
+  padding: 60px 10%;
+  font-family: sans-serif;
+}
+
+.f-UL {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col h4 {
+  position: relative;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 22px;
+  color: #f4c430;
+  text-transform: capitalize;
+}
+/*.footer-col h4 BEFORE*/
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  background-color: #dcdcdc;
+  height: 2px;
+  width: 40px;
+}
+/*.footer-col h4 BEFORE ended*/
+
+.f-UL:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.f-UL li a {
+  display: block;
+  font-size: 18px;
+  text-transform: lowercase;
+  color: #bdb6b6;
+  padding: 3px;
+  text-decoration: none;
+  transition: 0.4s;
+  text-transform: capitalize;
+}
+/*UN ORDER LIST Hover*/
+.f-UL a:hover {
+  color: #ffffff;
+  padding-left: 2px;
+  text-transform: capitalize;
+}
+/*UN ORDER LIST Hover ended*/
+
+.links a {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  color: #ffffff;
+  background-color: #939391ac;
+  margin: 0 8px 8px 0;
+  text-align: center;
+  line-height: 44px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+/*Links a Hover*/
+.links a:hover {
+  color: #4d4f55;
+  background-color: #ffd500;
+}
+
+.burger{
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5%;
+  top: 15px;
+}
+.line{
+  width: 27px;
+  background-color: #fff;
+  height: 2px;
+  margin: 5px 3px;
+}
+
+
+@media only screen and (max-width: 1140px){
+    .nav-list{
+      flex-direction: column;
+    }
+
+    .navbar{
+      flex-direction: column;
+    }
+
+    .rightNav{
+      display: none;
+    }
+
+    .burger{
+      display: block;
+    }
+
+    .h-nav-resp{
+      height: 75px;
+    }
+
+    .v-class-resp{
+      opacity: 0;
+    }
+}
